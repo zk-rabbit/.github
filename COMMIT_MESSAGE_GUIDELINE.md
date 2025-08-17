@@ -40,6 +40,12 @@ The `footer` is optional. The [Commit Message Footer](#commit-footer) format des
 
 The `<type>` and `<summary>` fields are mandatory, the `(<scope>)` field is optional.
 
+### Exception for docs-only or small-purpose repositories
+
+In repositories that only contain documentation (e.g., `.github`) or small-purpose projects (e.g., benchmarks, experiments),
+`type` and `scope` may be omitted. In such cases, focus on writing a clear and concise summary that adheres to the guidelines
+in the "Summary" section.
+
 ### BREAKING CHANGE
 
 A commit that either:
