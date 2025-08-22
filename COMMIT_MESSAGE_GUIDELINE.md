@@ -40,6 +40,12 @@ The `footer` is optional. The [Commit Message Footer](#commit-footer) format des
 
 The `<type>` and `<summary>` fields are mandatory, the `(<scope>)` field is optional.
 
+### Exception for docs-only or small-purpose repositories
+
+In repositories that only contain documentation (e.g., `.github`) or small-purpose projects (e.g., benchmarks, experiments),
+`type` and `scope` may be omitted. In such cases, focus on writing a clear and concise summary that adheres to the guidelines
+in the "Summary" section.
+
 ### BREAKING CHANGE
 
 A commit that either:
@@ -54,18 +60,18 @@ A BREAKING CHANGE can be part of commits of any type.
 
 Must be one of the following:
 
-| Type         | Description                                                                                                                                                              |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **build**    | Changes that affect the build system or external dependencies                                                                                                            |
-| **chore**    | Minor housekeeping tasks that do not affect production logic. Examples: typo fixes, updating `.gitignore`, modifying `.env.example`, or adjusting linter/config settings |
-| **ci**       | Changes to our CI configuration files and scripts (examples: Github Actions, SauceLabs)                                                                                  |
-| **docs**     | Documentation only changes                                                                                                                                               |
-| **feat**     | A new feature                                                                                                                                                            |
-| **fix**      | A bug fix                                                                                                                                                                |
-| **perf**     | A code change that improves performance                                                                                                                                  |
-| **refactor** | A code change that neither fixes a bug nor adds a feature                                                                                                                |
-| **style**    | Code formatting changes that do **not affect behavior or logic**. Examples: white-space adjustments, indentation, semicolon fixes, sorting imports/build targets         |
-| **test**     | Adding missing tests or correcting existing tests                                                                                                                        |
+| Type         | Description                                                                                                                                                                                                                         |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **build**    | Changes that affect the build system or external dependencies                                                                                                                                                                       |
+| **chore**    | Minor housekeeping tasks that do not affect production logic. Examples: typo fixes, updating `.gitignore`, modifying `.env.example`, or adjusting linter/config settings                                                            |
+| **ci**       | Changes to our CI configuration files and scripts (examples: Github Actions, SauceLabs)                                                                                                                                             |
+| **docs**     | Documentation only changes                                                                                                                                                                                                          |
+| **feat**     | A new feature                                                                                                                                                                                                                       |
+| **fix**      | A bug fix. If the bug is non-trivial (e.g., not just a typo or obvious mistake), clearly explain the incorrect behavior and its cause in the commit body to ensure future readers can understand the context and impact of the fix. |
+| **perf**     | A code change that improves performance                                                                                                                                                                                             |
+| **refactor** | A code change that neither fixes a bug nor adds a feature                                                                                                                                                                           |
+| **style**    | Code formatting changes that do **not affect behavior or logic**. Examples: white-space adjustments, indentation, semicolon fixes, sorting imports/build targets                                                                    |
+| **test**     | Adding missing tests or correcting existing tests                                                                                                                                                                                   |
 
 ### <a name="scope"></a> Scope
 
