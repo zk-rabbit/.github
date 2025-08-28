@@ -40,6 +40,18 @@ Keep in mind:
 - [ ] Branch name follows the [Branch Guideline](/BRANCH_GUIDELINE.md)
 - [ ] No intermediate changes within PR
 
+### Draft PRs
+
+A pull request in **draft** state on GitHub signals it's not ready to be reviewed.
+
+- Keep the PR in draft state until it is ready.
+- Automated tools like **gemini review** can still be used for feedback in this state.
+
+When your PR becomes **ready for review**, you must:
+
+- [ ] Change its status from **Draft** to **Ready for review** on GitHub.
+- [ ] Explicitly notify your teammates (e.g., via **Slack**) so they know it’s ready to be reviewed.
+
 ---
 
 ## Clarity & Reference Checklist
